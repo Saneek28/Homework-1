@@ -1,10 +1,10 @@
 import math
 
-from src.Figure import Figure
+from develop.src.Figure import Figure
 
 
 class Circle(Figure):
-    def __int__(self, radius):
+    def __init__(self, radius):
         Figure.__init__(self, "circle")
         self.area = math.pi * radius ** 2
         self.perimeter = 2 * math.pi * radius

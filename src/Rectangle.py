@@ -1,10 +1,9 @@
-from src.Figure import Figure
-from src.Figure import Figure
+from develop.src.Figure import Figure
 
 
 class Rectangle(Figure):
-    def __int__(self, a, b):
-        Figure.__init__(self, "rectangle")
+    def __init__(self, a, b):
+        Figure.__init__(self, "Rectangle")
         self.area = a * b
         self.perimeter = (a + b) * 2
 

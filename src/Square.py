@@ -1,4 +1,4 @@
-from src.Figure import Figure
+from develop.src.Figure import Figure
 
 
 class Square(Figure):

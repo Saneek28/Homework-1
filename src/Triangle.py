@@ -1,4 +1,4 @@
-from src.Figure import Figure
+from develop.src.Figure import Figure
 
 
 class Triangle(Figure):
@@ -8,6 +8,6 @@ class Triangle(Figure):
         self.perimeter = a + b + c
 
 
-triangle = Triangle(2, 13, 14, )
+triangle = Triangle(2, 13, 14)
 print("Площадь треугольника", triangle.area)
 print("Периметр треугольника", triangle.perimeter)

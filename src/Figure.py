@@ -1,3 +1,3 @@
 class Figure():
-    def __init__(self, nameval):
-        self.name = nameval
+    def __init__(self, name):
+        self.name = name
