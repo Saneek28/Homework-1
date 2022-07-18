@@ -6,11 +6,14 @@ from develop.src.Figure import Figure
 class Circle(Figure):
     def __init__(self, radius):
         Figure.__init__(self, "circle")
-        self.area = math.pi * radius ** 2
-        self.perimeter = 2 * math.pi * radius
+        self.radius = radius
 
 
-radius = 2
-circle = Circle(radius)
-print('Площадь окружности с радиусом 2 равна:', math.pi * (radius ** 2))
-print('Периметр окружности с радиусом 2 равна:', 2 * math.pi * radius)
+@property
+def area(self):
+    return math.pi * (self.radius ** 2)
+
+
+@property
+def perimeter(self):
+    return 2 * math.pi * self.radius

@@ -2,12 +2,16 @@ from develop.src.Figure import Figure
 
 
 class Rectangle(Figure):
+
     def __init__(self, a, b):
         Figure.__init__(self, "Rectangle")
-        self.area = a * b
-        self.perimeter = (a + b) * 2
+        self.a = a
+        self.b = b
 
+    @property
+    def area(self):
+        return self.a * self.b
 
-rectangle = Rectangle(10, 20)
-print("Площадь прямоугольника", rectangle.area)
-print("Периметр прямоугольника", rectangle.perimeter)
+    @property
+    def perimeter(self):
+        return 2 * (self.a + self.b)
