@@ -3,4 +3,7 @@ class Figure():
         self.name = name
 
     def add_area(self, figure):
-        return self.area + figure.area
+        if isinstance(figure, Figure):
+            return figure.area + self.area
+        else:
+            raise ValueError

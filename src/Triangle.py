@@ -9,13 +9,11 @@ class Triangle(Figure):
         self.b = b
         self.c = c
 
+    @property
+    def area(self):
+        half = self.perimeter / 2
+        return math.sqrt(half * (half - self.a) * (half - self.b) * (half - self.c))
 
-@property
-def area(self):
-    half = self.perimeter / 2
-    return math.sqrt(half * (half - self.a) * (half - self.b) * (half - self.c))
-
-
-@property
-def perimeter(self):
-    return self.a + self.b + self.c
+    @property
+    def perimeter(self):
+        return self.a + self.b + self.c

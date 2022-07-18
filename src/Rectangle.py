@@ -4,7 +4,7 @@ from develop.src.Figure import Figure
 class Rectangle(Figure):
 
     def __init__(self, a, b):
-        Figure.__init__(self, "Rectangle")
+        Figure.__init__(self, "rectangle")
         self.a = a
         self.b = b
 
